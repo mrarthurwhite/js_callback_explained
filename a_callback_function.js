@@ -1,11 +1,10 @@
-function myDisplayer(some) {
-    document.getElementById("demo").innerHTML = some;
+function myDisplayer(number) {
+    console.log("Displaying number : "+ number);
   }
   
-  function myCalculator(num1, num2, myCallback) {
-    let sum = num1 + num2;
-    myCallback(sum);
+  function myCalculator(number, myCallback) {
+    myCallback(number);
   }
   
-  myCalculator(5, 5, myDisplayer);
+  myCalculator(100, myDisplayer);
   
